@@ -1,12 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors')
+const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: ["./index.html"],
   theme: {
     extend: {
       colors: {
-        "lilac": "#967bdc",
+        lilac: "#967bdc",
         'blaze-orange': {
           '50': '#fff8f2', 
           '100': '#fff0e6', 
@@ -23,5 +23,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
-
+};

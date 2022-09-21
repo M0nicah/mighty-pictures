@@ -8,193 +8,176 @@
     <link href="./dist/output.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/style.css" />
   </head>
-  <body class="bg-blaze-orange-200 w-full h-full fon">
-    <nav class="justify-center flex items-center">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button-->
-            <button
-              type="button"
-              class="inline-flex items-center justify-center rounded-md p-2 text-blaze-orange-600 hover:bg-blaze-orange-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="block h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-              <svg
-                class="hidden h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
-          </div>
+  <body class="bg-gray-50 w-full h-full fon">
+    <header class="container">
+      <!-- Navbar -->
+      <nav
+        class="flex justify-between md:justify-around py-4 bg-white/80 backdrop-blur-md shadow-md w-full fixed top-0 left-0 right-0 z-10 px-8 md:px-3"
+      >
+        <!-- Logo Container -->
+        <div class="flex items-center">
+          <!-- Logo -->
+          <a class="cursor-pointer">
+            <h3 class="text-2xl font-medium text-blaze-orange-500">
+              <img
+                class="h-10"
+                src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg"
+                alt="Store Logo"
+              />
+            </h3>
+          </a>
         </div>
+
+        <!-- Links Section -->
         <div
-          class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
+          class="items-center md:space-x-8 justify-center justify-items-start md:justify-items-center md:flex md:pt-2 w-full left-0 top-16 px-5 md:px-10 py-3 md:py-0 border-t md:border-t-0"
         >
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex space-x-4 mt-5">
-              <a
-                href="#"
-                class="bg-blaze-orange-500 text-white px-3 py-2 rounded-md text-base font-extrabold"
-                aria-current="page"
-                >Home</a
-              >
-              <a
-                href="#"
-                class="text-black hover:text-blaze-orange-500 px-3 py-2 rounded-md text-base font-extrabold"
-                >About</a
-              >
-              <a
-                href="#"
-                class="text-black hover:text-blaze-orange-500 px-3 py-2 rounded-md text-base font-extrabold"
-                >Projects</a
-              >
-              <a
-                href="#"
-                class="text-black hover:text-blaze-orange-500 px-3 py-2 rounded-md text-base font-extrabold"
-                >Contact Us</a
-              >
-            </div>
-          </div>
+          <a
+            class="flex text-blaze-orange-600 hover:text-blaze-orange-500 cursor-pointer transition-colors duration-300"
+          >
+            Home
+          </a>
+
+          <a
+            class="flex text-gray-600 cursor-pointer transition-colors duration-300 font-semibold hover:text-blaze-orange-600"
+          >
+            About Us
+          </a>
+
+          <a
+            class="flex text-gray-600 hover:text-blaze-orange-500 cursor-pointer transition-colors duration-300"
+          >
+            Projects
+          </a>
+
+          <a
+            class="flex text-gray-600 hover:text-blaze-orange-500 cursor-pointer transition-colors duration-300"
+          >
+            Pricing
+          </a>
+
+          <a
+            class="flex text-gray-600 hover:text-blaze-orange-500 cursor-pointer transition-colors duration-300"
+          >
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Hamberger Menu -->
+        <button
+          class="w-10 h-10 md:hidden justify-self-end rounded-full hover:bg-gray-100"
+        >
+          <svg
+            class="mx-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            version="1.1"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <section
+      class="flex flex-wrap font items-center mx-3 font-sans px-4 w-full lg:max-w-screen-lg sm:max-w-screen-sm md:max-w-screen-md"
+    >
+      <!-- Column-1 -->
+      <div class="px-3 w-full lg:w-2/5 mt-5">
+        <div
+          class="mx-auto mt-5 max-w-lg text-center lg:mx-0 lg:max-w-md lg:text-left leading-10"
+        >
+          <h2 class="mt-5 text-3xl font-bold text-left lg:text-5xl">
+            MightyPictures
+
+            <span class="text-5xl text-blaze-orange-500 leading-relaxed"
+              >Photography
+            </span>
+
+            Provide Photography Services
+          </h2>
+
+          <p
+            class="visible mx-0 mt-3 mb-2 text-sm leading-relaxed text-left text-slate-400"
+          >
+            Your one stop shop for quality photos!
+          </p>
+        </div>
+
+        <div class="text-center lg:text-left">
+          <a
+            class="block visible py-4 px-8 mb-4 text-xs font-semibold tracking-wide leading-none text-white bg-blaze-orange-500 rounded cursor-pointer sm:mr-3 sm:mb-0 sm:inline-block"
+            >Book Now</a
+          >
+
+          <a
+            class="block visible py-4 px-8 text-xs font-semibold leading-none bg-white rounded border border-solid cursor-pointer sm:inline-block border-slate-200 text-slate-500"
+            >How We Work?</a
+          >
         </div>
       </div>
-      <!-- Mobile menu, show/hide based on menu state. -->
-      <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pt-2 pb-3">
-          <a
-            href="#"
-            class="bg-blaze-orange-600 text-white block px-3 py-2 rounded-md text-base font-medium"
-            aria-current="page"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="text-black hover:bg-blaze-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >About</a
-          >
-          <a
-            href="#"
-            class="text-black hover:bg-blaze-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Projects</a
-          >
-          <a
-            href="#"
-            class="text-black hover:bg-blaze-orange-500 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            >Contact Us</a
-          >
-        </div>
-      </div>
-    </nav>
-    <section>
-      <div class="relative pt-[120px] lg:pt-[150px] pb-[110px]">
-        <div class="container">
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full lg:w-5/12 px-4">
-              <div class="hero-content">
-                <h1
-                  class="text-dark font-bold bold text-4xl sm:text-[42px] lg:text-[40px] xl:text-[42px] leading-snug mb-3"
-                >
-                  MightyPictures <br />
-                  Photography <br />
-                </h1>
-                <p class="text-base mb-8 text-body-color max-w-[480px]">
-                  Your one stop shop for
-                  <span class="text-blaze-orange-500"> quality</span> photos!
-                </p>
-                <ul class="flex flex-wrap items-center">
-                  <li>
-                    <a
-                      href="#"
-                      class="py-4 px-6 sm:px-10 lg:px-8 xl:px-10 inline-flex w-48 items-center justify-center text-center text-white text-base bg-blaze-orange-500 font-normal rounded-full"
-                    >
-                      Book Now
-                      <span class="ml-5 font-bold animate-pulse">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="w-6 h-6 font-bold">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+      <!-- column-2 -->
+      <div class="px-3 mt-5 w-full lg:mb-0 lg:w-3/5">
+        <!-- hero image container -->
+        <div class=" pt-[120px] lg:pt-[150px] pb-[110px]">
+          <div class="container">
+            <div class="flex flex-wrap -mx-4">
+              <div class="inline-block lg:block lg:w-6/12 px-4"></div>
+                <div class="w-full lg:w-6/12 px-4">
+                  <div class="">
+                    <div class="flex-items flex relative order-1">
+                      <img src="./src/images/grad1.JPG" alt="" class='lap-img2 absolute -right-36   border-2 top-30 border-green-600 rounded-md'/>
+                      <img src="../src/images/grad3.JPG" alt="" class='lap-img  rounded-md border-red-600 border-2'  />
+                      <img src="../src/images/grad2.JPG" alt="man-1" class='over-img border-black border-solid border-2 rounded-md'/>
+                    </div>
+                      
+                      <span class="absolute -left-8 -bottom-8 z-[-1]">
+                        <svg
+                          width="93"
+                          height="93"
+                          viewBox="0 0 93 93"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="2.5" cy="2.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="2.5" cy="24.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="2.5" cy="46.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="2.5" cy="68.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="2.5" cy="90.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="24.5" cy="2.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="24.5" cy="24.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="24.5" cy="46.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="24.5" cy="68.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="24.5" cy="90.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="46.5" cy="2.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="46.5" cy="24.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="46.5" cy="46.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="46.5" cy="68.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="46.5" cy="90.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="68.5" cy="2.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="68.5" cy="24.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="68.5" cy="46.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="68.5" cy="68.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="68.5" cy="90.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="90.5" cy="2.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="90.5" cy="24.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="90.5" cy="46.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="90.5" cy="68.5" r="2.5" fill="#ff6b00" />
+                          <circle cx="90.5" cy="90.5" r="2.5" fill="#ff6b00" />
                         </svg>
                       </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="hidden lg:block lg:w-1/12 px-4"></div>
-            <div class="w-full lg:w-6/12 px-4">
-              <div class="lg:text-right lg:ml-auto">
-                <div class="relative inline-block z-10 pt-11 lg:pt-0">
-                  <img
-                    src="./src/images/grad1.JPG"
-                    alt="hero"
-                    class="max-w-full lg:ml-auto rounded-2xl border border-black"
-                  />
-                  <span class="absolute -left-8 -bottom-8 z-[-1]">
-                    <svg
-                      width="93"
-                      height="93"
-                      viewBox="0 0 93 93"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="2.5" cy="2.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="2.5" cy="24.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="2.5" cy="46.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="2.5" cy="68.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="2.5" cy="90.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="24.5" cy="2.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="24.5" cy="24.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="24.5" cy="46.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="24.5" cy="68.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="24.5" cy="90.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="46.5" cy="2.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="46.5" cy="24.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="46.5" cy="46.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="46.5" cy="68.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="46.5" cy="90.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="68.5" cy="2.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="68.5" cy="24.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="68.5" cy="46.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="68.5" cy="68.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="68.5" cy="90.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="90.5" cy="2.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="90.5" cy="24.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="90.5" cy="46.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="90.5" cy="68.5" r="2.5" fill="#ff6b00" />
-                      <circle cx="90.5" cy="90.5" r="2.5" fill="#ff6b00" />
-                    </svg>
-                  </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <main>
       <div class="header5">
         <h2 class="heading">Gallery</h2>

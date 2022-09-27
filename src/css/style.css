@@ -14,31 +14,45 @@
     font-family: 'Arima', cursive; 
 
 }
-.lap-img2{
+/* .lap-img2{
     width: 990px;
     height: 450px;
     
+} */
+
+
+
+#item-1:checked ~ .cards #img-3,
+#item-2:checked ~ .cards #img-1,
+#item-3:checked ~ .cards #img-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
 }
-.heading{
-    position: absolute;
-    width: 80px;
-    height: 39px;
-    left: 680px;
-    top: 770px;
-    color: #170A00;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 24px;
-  }
-  .arrow{
-    box-sizing: border-box;
-    position: absolute;
-    width: 38px;
-    height: 30px;
-    left: 700px;
-    top: 813px;
-    animation: bounce 0.8s infinite alternate;
-  }
 
-  Investing in high-quality professional images of yourself and your business will help to elevate your brand and provide a far better first impression for your target audience and possible clients.
+#item-1:checked ~ .cards #img-2,
+#item-2:checked ~ .cards #img-3,
+#item-3:checked ~ .cards #img-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
 
-  Investing in high-quality professional images of yourself and your business will help to elevate your brand in a variety of ways and make a far better first impression for your target audience and possible clients.
+#item-1:checked ~ .cards #img-1,
+#item-2:checked ~ .cards #img-2,
+#item-3:checked ~ .cards #img-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+  transform: translateY(-80px);
+}

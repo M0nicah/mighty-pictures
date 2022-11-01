@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <title>Sending Mail</title>
+  link
+  
+</head>
+ 
+<body>
+  <div id="mailBody">
+    <table border=1>
+      <tr>
+        <td>blabla</td>
+      </tr> 
+    </table>
+  </div>
+<input type="button" onclick="sendMail();">
+
+<script type="text/javascript">
+  function sendMail(){
+    var mailBody=document.getElementById('mailBody').innerHTML;
+    window.location="mailto:yourmail@domain.com?subject=hii&body="+mailBody;
+  }
+</script>
+
+</body>
+
+  
+</html>

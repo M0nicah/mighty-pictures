@@ -26,7 +26,7 @@
 #item-2:checked ~ .cards #img-1,
 #item-3:checked ~ .cards #img-2 {
   transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
+  opacity: 1;
   z-index: 0;
 }
 
@@ -34,7 +34,7 @@
 #item-2:checked ~ .cards #img-3,
 #item-3:checked ~ .cards #img-1 {
   transform: translatex(40%) scale(0.8);
-  opacity: 0.4;
+  opacity: 1;
   z-index: 0;
 }
 

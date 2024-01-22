@@ -1,0 +1,58 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500&display=swap');
+
+.font{
+    font-family: 'Lexend', sans-serif;
+    
+}
+.fon{
+    font-family: 'Arima', cursive;
+}
+.bold{
+    font-family: 'Arima', cursive; 
+
+}
+/* .lap-img2{
+    width: 990px;
+    height: 450px;
+    
+} */
+
+
+
+#item-1:checked ~ .cards #img-3,
+#item-2:checked ~ .cards #img-1,
+#item-3:checked ~ .cards #img-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 1;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #img-2,
+#item-2:checked ~ .cards #img-3,
+#item-3:checked ~ .cards #img-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 1;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #img-1,
+#item-2:checked ~ .cards #img-2,
+#item-3:checked ~ .cards #img-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+#item-2:checked ~ .player #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .player #test {
+  transform: translateY(-40px);
+}
+
+#item-3:checked ~ .player #test {
+  transform: translateY(-80px);
+}
